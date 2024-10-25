@@ -1,0 +1,159 @@
+
+.ventana{
+    width: 55%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-top: 70px;
+    }
+
+.cuatro{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.contacto{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+.salir{
+    color: #000;;
+    font-weight: 0;
+    font-size: 33px;
+    background-color: none;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contenedor-formulario{
+    margin-top: 20px;
+    width: 100%;
+    height: 86%;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+
+}
+
+.hijo-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.input1{
+height: 40px;
+width: 100%;
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: var(--bs-body-color);
+background-color: var(--bs-body-bg);
+background-clip: padding-box;
+border: 3px solid #d0d3d6;
+border-radius: 5px;
+grid-column-start: 1;
+grid-column-end: 5;
+box-sizing: border-box;
+}
+
+.hijo-form > input{
+    
+height: 40px;
+width: 100%;
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: var(--bs-body-color);
+background-color: var(--bs-body-bg);
+background-clip: padding-box;
+border: 3px solid #d0d3d6;
+border-radius: 5px;
+box-sizing: border-box
+}
+
+.email, .nombre{
+    margin-top: 10px
+}
+
+.email{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.nombre{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+h1{
+    align-self: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+body{
+    background-color: #f6f6f6;
+}
+button{
+    cursor: pointer;
+}
+
+.all{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.file{
+    border: none !important;
+    background-color: #000;
+    width: 100% !important;
+}
+#text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.botonh{
+    width: 100%;
+    height: 40px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color:#0b5ed7;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.salir{
+    background-color: none;
+    border-radius: 20px;
+    width: 50px;
+}

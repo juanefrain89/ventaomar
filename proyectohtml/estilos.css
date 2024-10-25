@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 20px;
+box-sizing: border-box;
+}
+.itemspadre{
+    display: flex;
+    justify-content: space-around;
+
+}
+.items{
+    margin-left: 20px;
+    font-size: 23px;
+}
+img{
+    width: 50px;
+    height:70%;
+    border-radius: 20px;
+}
+
+.promocion{
+    border-radius: 0;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+.titulojuan{
+    color: white;
+}
+.juan{
+    background-color: rgb(46, 44, 44);
+    width: 90%;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+
+    padding-bottom: 5px;
+    }
+.pp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items{
+    background-color: #369;
+    padding:5px 25px 5px 25px ;
+    border-radius: 15px;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+}
+
+.pp > button{
+    background-color: #25D366; 
+    color: white; 
+    padding: 10px 20px; 
+    width: 250px;
+    height: 50px;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 1s ease;
+   
+}
+
+.pp button:hover{
+    background-color: #29a858;
+}
+
+.lel{
+    width: 50%;
+}
+h1{
+    margin: 0;
+}
+
+.lel >p{
+    color: rgb(185, 182, 182);
+    font-size: 20px;
+}
+
+.seccion{
+    background-color: #f2f2f2;
+   
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px; 
+    color: #313840;   
+}
+
+.contenedor{
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.uno{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.uno > img{
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dos{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 21px;
+    color: #32353a;
+    
+}
+
+.dos-h2{
+    color: #5e6b79 ;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.contenedorp{
+    padding: 5px;
+   
+    margin-top: 20px;
+   
+}
+
+.dos-p{
+    color: #0d652d;
+    display: inline-block ;
+    width: auto;
+    font-weight: 700 !important;
+    line-height: 19px;
+    padding: 5px 10px;
+    background-color: #e6f4ea;
+    
+  
+}
+
+.dos-boton{
+    background-color: #313840;
+    border:none;
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    color: white;
+    margin-top: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.tres{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.cuatro{
+    padding-top: 20px
+}
+.cinco{
+    width: 100%;
+    height: 100%;
+}
