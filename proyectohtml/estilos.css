@@ -266,7 +266,7 @@ h1{
  }
  .contenedor{
     gap: 0;
-    grid-template-rows: 300px 300px 300px 350px 250px 300px;
+    grid-template-rows: 300px 330px 300px 380px 250px 300px;
  }
  .cuatro {
     height: 300px;
