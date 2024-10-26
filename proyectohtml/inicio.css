@@ -164,4 +164,7 @@ a{
     .diseño{
         text-align: center;
     }
+     .ultimo-boton{
+        margin-bottom: 30px;
+    }
 }
