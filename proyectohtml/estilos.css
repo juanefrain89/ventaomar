@@ -236,8 +236,8 @@ h1{
     .dos{
         padding-bottom: 25px
     }
- .promocion{
-    height: 250px;
+ .promocion, #deslizador{
+    height: 270px !important;
  }
  .pp{
     height: auto;
@@ -259,7 +259,7 @@ h1{
     grid-template-columns: 1fr;
  }
  .uno > img{
-    height: 250px;
+    height: 250px !;
  }
  .seccion{
     padding: 20px;
