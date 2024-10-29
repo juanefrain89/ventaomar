@@ -439,4 +439,11 @@ a{
     .h1-sec3{
         font-size: 21px !important;
     }
+    .itemspadre{
+        display: none;
+    }
+    .contenedor2{
+        width: 90%;
+        padding-left: 10px;
+    }
 }
