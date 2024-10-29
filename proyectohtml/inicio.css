@@ -173,7 +173,7 @@ a{
 .title {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 color: #369;
-font-size: 36px;
+font-size: 20px;
     transition: all 1s ease; /* La transición durará 0.2 segundos */
 }
 
