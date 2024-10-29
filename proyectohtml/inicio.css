@@ -176,5 +176,22 @@ color: #369;
 font-size: 20px;
     transition: all 1s ease; /* La transición durará 0.2 segundos */
 }
+#deslizador {
+    width: 80%;
+    margin: 0 auto;
+}
 
+.slide {
+    width: 100%;
+    display: none; /* Oculta las diapositivas por defecto */
+    position: relative;
+}
 
+.slide img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.slide.active {
+    display: block; /* Muestra la diapositiva activa */
+}

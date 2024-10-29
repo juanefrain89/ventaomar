@@ -9,19 +9,22 @@
 <body>
     <section class="secion2">
         <div class="menu">
-            <img src="logo.jfif" alt="">
+            <img src="logo.jfif" alt="Logo">
             <div class="itemspadre"> 
-            <div class="items">inicio</div>
-            <div class="items">contacto</div>
-            <div class="items">costos</div>
-            <div class="items"> <a href="pagina.html">ver mas</a> </div>
+                <div class="items">inicio</div>
+                <div class="items">contacto</div>
+                <div class="items">costos</div>
+                <div class="items"><a href="pagina.html">ver más</a></div>
+            </div>
         </div>
+
+        <div class="con-title">
+            <h1 class="title"></h1>
         </div>
-        <div class="con-title">   <h1 class="title"></h1>             </div>
         
         <div class="contenedor">
             <div class="primero">
-                <img src="imagen1.jpg" alt="">
+                <img src="imagen1.jpg" alt="Imagen 1">
                 <div class="informacion">
                     <h1>Diseño de páginas web</h1>
                     <h2 class="diseño">Diseñamos tu página web profesional y enfocada a cumplir tus requerimientos.</h2>
@@ -29,43 +32,74 @@
                 </div>
             </div>
             <div class="primero">
-                <img src="imagen2.jpg" alt="">
+                <img src="imagen2.jpg" alt="Imagen 2">
                 <div class="informacion">
                     <h1>Diseño de páginas web</h1>
                     <h2 class="diseño">Diseñamos tu página web profesional y enfocada a cumplir tus requerimientos.</h2>
-                    <button class="dos-boton"> <a href="barata.html"> click</a> </button>
+                    <button class="dos-boton"><a href="barata.html">click</a></button>
                 </div>
             </div>
             <div class="primero">
-                <img src="imagen3.jpg" alt="">
+                <img src="imagen3.jpg" alt="Imagen 3">
                 <div class="informacion">
                     <h1>Diseño de páginas web</h1>
                     <h2 class="diseño">Diseñamos tu página web profesional y enfocada a cumplir tus requerimientos.</h2>
                     <button class="dos-boton ultimo-boton">click</button>
                 </div>
             </div>
-           
+        </div>
+
+        <!-- Slider -->
+        <div id="deslizador">
+            <div class="slide active">
+                <h1>África</h1>
+                <img src="Imágenes/img1.jpg" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <h1>Americanos</h1>
+                <img src="Images/img2.jpg" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <h1>Asiáticos</h1>
+                <img src="Images/img3.jpg" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <h1>Árabe</h1>
+                <img src="Images/img4.jpg" alt="Imagen 4">
+            </div>
+            <div class="slide">
+                <h1>Moderno</h1>
+                <img src="Images/img5.jpg" alt="Imagen 5">
+            </div>
+            <div class="slide">
+                <h1>Europeo</h1>
+                <img src="Images/img6.jpg" alt="Imagen 6">
+            </div>
         </div>
     </section>
 
     <script>
-    let palabra = "desarrollamos tu página web";
-const title = document.querySelector(".title");
-let index = 0;
+        let palabra = "desarrollamos tu página web";
+        const title = document.querySelector(".title");
+        let index = 0;
 
-let intervalos = setInterval(() => {
-    title.innerHTML = palabra.slice(0, index + 1);
-    index++;
-    
-    // Cuando el índice alcance la longitud de la palabra, reinicia el índice
-    if (index === palabra.length) {
-        console.log("ya");
-        index = 0; // Reinicia el índice para comenzar de nuevo
-    }
-}, 300);
+        let intervalos = setInterval(() => {
+            title.innerHTML = palabra.slice(0, index + 1);
+            index++;
+            if (index === palabra.length) {
+                index = 0;
+            }
+        }, 150);
 
+        const slides = document.querySelectorAll('.slide');
+        let diapositivaActual = 0;
+        const slideInterval = setInterval(nextSlide, 2000);
 
+        function nextSlide() {
+            slides[diapositivaActual].classList.remove('active');
+            diapositivaActual = (diapositivaActual + 1) % slides.length;
+            slides[diapositivaActual].classList.add('active');
+        }
     </script>
-
 </body>
 </html>
