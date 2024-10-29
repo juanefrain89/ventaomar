@@ -49,33 +49,8 @@
             </div>
         </div>
 
-        <!-- Slider -->
-        <div id="deslizador">
-            <div class="slide active">
-                <h1>África</h1>
-                <img src="Imágenes/img1.jpg" alt="Imagen 1">
-            </div>
-            <div class="slide">
-                <h1>Americanos</h1>
-                <img src="Images/img2.jpg" alt="Imagen 2">
-            </div>
-            <div class="slide">
-                <h1>Asiáticos</h1>
-                <img src="Images/img3.jpg" alt="Imagen 3">
-            </div>
-            <div class="slide">
-                <h1>Árabe</h1>
-                <img src="Images/img4.jpg" alt="Imagen 4">
-            </div>
-            <div class="slide">
-                <h1>Moderno</h1>
-                <img src="Images/img5.jpg" alt="Imagen 5">
-            </div>
-            <div class="slide">
-                <h1>Europeo</h1>
-                <img src="Images/img6.jpg" alt="Imagen 6">
-            </div>
-        </div>
+
+        
     </section>
 
     <script>
@@ -91,15 +66,7 @@
             }
         }, 150);
 
-        const slides = document.querySelectorAll('.slide');
-        let diapositivaActual = 0;
-        const slideInterval = setInterval(nextSlide, 2000);
-
-        function nextSlide() {
-            slides[diapositivaActual].classList.remove('active');
-            diapositivaActual = (diapositivaActual + 1) % slides.length;
-            slides[diapositivaActual].classList.add('active');
-        }
+        
     </script>
 </body>
 </html>
