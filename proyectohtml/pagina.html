@@ -48,6 +48,33 @@
             <button>mandar whatsapp</button>
         </div>
         </div>
+        
+<div id="deslizador2">
+    <img src="anterior2.jfif" class="anterior" alt="">
+    <img src="siguiente2.jfif" class="siguiente" alt="">
+    <div class="slide2 activee">
+      
+        <img src="chaparro.webp" alt="Imagen 1" class="chaparro">
+        <p class="chaparrop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod doloremque explicabo illo magni possimus fugiat consectetur magnam reiciendis fugit exercitationem quos ducimus tenetur earum est eum dicta, deserunt sit at.</p>
+        <p class="colega">chaparro checheneguer</p>
+    </div>
+    <div class="slide2">
+        
+        <img src="alex.jfif" alt="Imagen 2">
+        <p class="chaparrop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod doloremque explicabo illo magni possimus fugiat consectetur magnam reiciendis fugit exercitationem quos ducimus tenetur earum est eum dicta, deserunt sit at.</p>
+        <p class="colega">alex marin</p>
+    </div>
+    <div class="slide2">
+    
+        <img src="imagen2.jpg" alt="Imagen 3">
+    </div>
+    <div class="slide2">
+      
+        <img src="imagen3.jpg" alt="Imagen 4">
+    </div>
+  
+   
+</div>
     </center>
     </section>
     <section class="seccion">
@@ -91,6 +118,7 @@
     <center> 
     <button class="dos-boton">click</button>
 </center>
+
     </section>
    
 <script>
@@ -101,8 +129,41 @@
         function nextSlide() {
             slides[diapositivaActual].classList.remove('active');
             diapositivaActual = (diapositivaActual + 1) % slides.length;
-            slides[diapositivaActual].classList.add('active');
-        }
+            slides[diapositivaActual].classList.add('active')}
+
+
+
+// Selecciona todas las diapositivas y el botón de retroceso
+const slides2 = document.querySelectorAll('.slide2');
+let diapositivaActual2 = 0;
+
+
+const anterior = document.querySelector(".anterior");
+
+const siguiente = document.querySelector(".siguiente");
+
+function atrasar() {
+    // Remueve la clase 'activee' de la diapositiva actual
+    slides2[diapositivaActual2].classList.remove('activee');
+    
+    // Calcula la nueva diapositiva actual al retroceder
+    diapositivaActual2 = (diapositivaActual2 - 1 + slides2.length) % slides2.length;
+    
+    // Añade la clase 'activee' a la nueva diapositiva actual
+    slides2[diapositivaActual2].classList.add('activee');
+}
+
+anterior.addEventListener("click", atrasar);
+
+siguiente.addEventListener("click", nextSlide2);
+
+function nextSlide2() {
+    slides2[diapositivaActual2].classList.remove('activee');
+    diapositivaActual2 = (diapositivaActual2 + 1) % slides2.length;    
+    slides2[diapositivaActual2].classList.add('activee');
+}
+
+
 </script>
 </body>
 </html>
