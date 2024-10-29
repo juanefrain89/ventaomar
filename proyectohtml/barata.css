@@ -447,4 +447,7 @@ a{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .contenedor4-hijo >button {
+        height: 120px !important;
+    }
 }
