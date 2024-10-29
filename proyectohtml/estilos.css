@@ -233,6 +233,14 @@ h1{
 
 
 @media screen and (max-width: 544px) {
+    #deslizador2 {
+        width: 90% !important;
+        height: 700px !important;
+
+    }
+    .slide2{
+        width: 70%;
+    }
     .dos{
         padding-bottom: 25px
     }
@@ -319,4 +327,71 @@ h1{
 
 .slide.active {
     display: block; /* Muestra la diapositiva activa */
+}
+
+
+
+
+
+
+#deslizador2 {
+    width: 50%;
+    margin: 50px auto;
+    height: 500px;
+    position: relative;
+
+}
+
+.slide2 {
+    width: 60%;
+    display: none; /* Oculta las diapositivas por defecto */
+    position: relative;
+    height: 100%;
+}
+
+.chaparrop{
+margin-top: 40px;
+font-size: 20px;
+text-align: center;
+font-family: 'Share Tech Mono', monospace;
+font-weight: bold;
+}
+
+.slide2 img {
+    width: 150px;
+    height: 150px; /* Ajusta la altura automáticamente */
+    border-radius: 1000px;
+}
+
+.slide2.activee {
+    display: block; /* Muestra la diapositiva activa */
+}
+.anterior{
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    z-index: 10;
+    left: -0px;
+    top: 50%; /* Ajustar el punto de inicio al 50% del contenedor */
+    transform: translateY(-50%);
+    cursor: pointer; 
+}
+
+.siguiente{
+        position: absolute;
+        height: 40px;
+        width: 50px;
+        z-index: 10;
+        right:  0;
+        top: 50%; /* Ajustar el punto de inicio al 50% del contenedor */
+        transform: translateY(-50%);
+        cursor: pointer;
+
+}
+
+.colega{
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+   
 }
