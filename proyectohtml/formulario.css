@@ -137,6 +137,12 @@ button{
     margin-bottom: 20px;
     font-size: 16px;
     padding: 5px;
+    border: 2px solid gainsboro;
+    border-radius: 7px;
+  font-size: 16px;
+  padding: 5px 10px;
+  outline: none;
+  background: none;
 }
 
 .botonh{
@@ -157,3 +163,27 @@ button{
     border-radius: 20px;
     width: 50px;
 }
+
+
+
+@media screen and (max-width: 544px) {
+  .ventana{
+    width: 90%;
+  }
+  .hijo-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #text{
+    box-shadow: none;
+  }
+  .email, .nombre{
+  
+    display: inline-block;
+  }
+  .all{
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+  }}
