@@ -17,6 +17,7 @@
             <div class="items"> <a href="pagina.html">ver mas</a> </div>
         </div>
         </div>
+        <h1 class="title"></h1>
         <div class="contenedor">
             <div class="primero">
                 <img src="imagen1.jpg" alt="">
@@ -45,6 +46,25 @@
            
         </div>
     </section>
+
+    <script>
+    let palabra = "desarrollamos tu página web";
+const title = document.querySelector(".title");
+let index = 0;
+
+let intervalos = setInterval(() => {
+    title.innerHTML = palabra.slice(0, index + 1);
+    index++;
     
+    // Cuando el índice alcance la longitud de la palabra, reinicia el índice
+    if (index === palabra.length) {
+        console.log("ya");
+        index = 0; // Reinicia el índice para comenzar de nuevo
+    }
+}, 300);
+
+
+    </script>
+
 </body>
 </html>
