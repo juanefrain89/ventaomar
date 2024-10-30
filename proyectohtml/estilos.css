@@ -337,8 +337,9 @@ h1{
 #deslizador2 {
     width: 50%;
     margin: 50px auto;
-    height: 500px;
+    height: auto;
     position: relative;
+  
 
 }
 
@@ -379,8 +380,8 @@ font-weight: bold;
 
 .siguiente{
         position: absolute;
-        height: 40px;
-        width: 50px;
+        height: 55px;
+        width: 75px;
         z-index: 10;
         right:  0;
         top: 50%; /* Ajustar el punto de inicio al 50% del contenedor */
